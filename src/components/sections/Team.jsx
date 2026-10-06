@@ -9,7 +9,7 @@ export function Team() {
   return (
     <section id="equipo" className="section-space bg-white" aria-labelledby="team-title">
       <div className="page-shell">
-        <AnimatedSection><SectionIntro titleId="team-title" eyebrow="Equipo" title="Las personas detrás de IDEA." text="Conozca a quienes llevan adelante nuestros desarrollos electrónicos." /></AnimatedSection>
+        <AnimatedSection><SectionIntro titleId="team-title" eyebrow="El equipo" title="Profesionales que llevan cada proyecto a la práctica." text="Sergio Hernán y Alejandro Cabral aportan su experiencia para transformar cada desafío técnico en una solución concreta." /></AnimatedSection>
         <div className="mt-12 grid gap-5 md:grid-cols-2">
           {siteContent.team.map((person, index) => <AnimatedSection delay={index * 0.1} key={person.name}><motion.article whileHover={reduceMotion ? {} : { y: -6 }} transition={{ duration: 0.2 }} className="interactive-card group relative overflow-hidden border border-border bg-slate-50 p-6 sm:p-8">
             <div className="relative overflow-hidden rounded-2xl bg-slate-200">

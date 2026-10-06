@@ -9,7 +9,7 @@ export function AnimatedSection({ children, className = "", delay = 0, immediate
       initial={reduceMotion || immediate ? false : { opacity: 0, y: 24 }}
       whileInView={reduceMotion || immediate ? {} : { opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.18 }}
-      transition={{ duration: 0.55, delay, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.75, delay: delay + 0.1, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}
     </motion.div>

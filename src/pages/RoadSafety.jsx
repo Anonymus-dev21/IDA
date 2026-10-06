@@ -16,6 +16,11 @@ export function RoadSafety() {
             <p className="eyebrow text-cyan-300">Área de IDEA Ingeniería</p>
             <h1 id="road-title" className="mt-5 max-w-4xl font-display text-5xl font-semibold tracking-[-0.055em] sm:text-6xl lg:text-7xl">Seguridad y Control Vial</h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-200">Desarrollamos equipos y servicios para la medición, el registro y la gestión de información vinculada al tránsito.</p>
+            <a href="#postventa" className="group mt-5 inline-flex items-center gap-3 rounded-full border border-cyan-200/70 bg-cyan-300 px-4 py-[10px] text-left text-brand-deep shadow-[0_12px_32px_rgba(34,211,238,0.25)] transition duration-200 hover:-translate-y-1 hover:bg-cyan-200 sm:px-5">
+              <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand-deep text-cyan-300"><HiCheck size={16} /></span>
+              <span><span className="mt-0.5 block font-display text-base font-bold">Excelente servicio postventa</span></span>
+              <HiArrowRight className="ml-1 shrink-0 transition-transform duration-200 group-hover:translate-x-1" size={22} />
+            </a>
           </AnimatedSection>
         </div>
       </section>
@@ -46,7 +51,7 @@ export function RoadSafety() {
       </section>
 
       <section id="servicios" className="section-space bg-surface" aria-labelledby="road-services-title">
-        <div className="page-shell grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+        <div className="page-shell grid gap-12 lg:grid-cols-[0.8fr_1.2fr]" id="acompañamiento">
           <AnimatedSection>
             <p className="eyebrow text-brand-blue">Servicios</p>
             <h2 id="road-services-title" className="mt-4 font-display text-4xl font-semibold tracking-[-0.04em] text-ink sm:text-5xl">Un equipo técnico detrás de cada instalación.</h2>

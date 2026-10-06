@@ -20,8 +20,17 @@ export function Sentinel24() {
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-200">Sentinel 24 es un cinemómetro multicarril con detección por espiras inductivas. Puede fiscalizar hasta dos carriles al mismo tiempo y está homologado en cumplimiento con la Resolución 753/98.</p>
             <a className="button mt-8" href={`mailto:${contact.email}?subject=Consulta%20t%C3%A9cnica%20Sentinel%2024`}>Solicitar información técnica <HiArrowRight size={19} /></a>
           </AnimatedSection>
-          <AnimatedSection immediate delay={0.1} className="overflow-hidden rounded-[1.75rem] border border-white/10">
+          <AnimatedSection immediate delay={0.1} className="relative overflow-hidden rounded-[1.75rem] border border-white/10">
             <img src={sentinel.heroImage} width="2048" height="1152" alt="Render de Sentinel 24 instalado en una vía" className="aspect-[16/10] w-full object-cover" />
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-deep via-brand-deep/90 to-transparent px-5 pb-5 pt-16 sm:px-7 sm:pb-7">
+              <div className="flex items-end gap-4">
+                <div className="shrink-0 -rotate-2 rounded-lg border-2 border-red-200 bg-white/95 px-4 py-2 text-center text-red-800 shadow-lg" aria-label="Homologado, Resolución 753/98">
+                  <strong className="block font-display text-sm font-extrabold tracking-[0.12em]">HOMOLOGADO</strong>
+                  <span className="block text-[0.6rem] font-bold uppercase tracking-[0.1em]">Resolución 753/98</span>
+                </div>
+                <p className="max-w-xs pb-1 text-xs font-medium leading-5 text-white sm:text-sm">Homologado nacionalmente, con ensayos realizados en el INTI.</p>
+              </div>
+            </div>
           </AnimatedSection>
         </div>
       </section>
@@ -49,17 +58,6 @@ export function Sentinel24() {
               <ul className="mt-6 space-y-4">{group.items.map((item) => <li key={item} className="flex gap-3 leading-6 text-slate-700"><HiCheck className="mt-1 shrink-0 text-brand-blue" size={18} />{item}</li>)}</ul>
             </AnimatedSection>)}
           </div>
-        </div>
-      </section>
-
-      <section className="section-space bg-white" aria-labelledby="sentinel-homologation-title">
-        <div className="page-shell grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-center">
-          <AnimatedSection><div className="inline-block -rotate-2 rounded-xl border-[3px] border-red-800/75 px-8 py-5 text-center text-red-800"><strong className="block font-display text-2xl font-extrabold tracking-[0.12em]">HOMOLOGADO</strong><span className="block text-xs font-semibold uppercase tracking-widest">Resolución 753/98</span></div></AnimatedSection>
-          <AnimatedSection delay={0.08}>
-            <p className="eyebrow text-brand-blue">Homologación nacional</p>
-            <h2 id="sentinel-homologation-title" className="mt-4 font-display text-4xl font-semibold tracking-[-0.04em] text-ink">Ensayos realizados en el INTI.</h2>
-            <p className="mt-5 leading-7 text-muted">Sentinel 24 está homologado en cumplimiento con la Resolución 753/98, con ensayos realizados en el INTI.</p>
-          </AnimatedSection>
         </div>
       </section>
 

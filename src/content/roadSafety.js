@@ -13,19 +13,19 @@ export const roadSafety = {
       name: "Sentinel Doppler-S",
       type: "Control de cruce con luz roja",
       description: "Detección de paso, sentido y velocidad para registrar cruces en rojo e invasión de la senda peatonal.",
-      image: "/assets/placeholders/generic-intersection-placeholder.svg",
+      image: "/assets/development/dppler.png",
       imageAlt: "Ilustración genérica de una intersección con semáforos",
       path: "/seguridad-vial/sentinel-doppler-s",
-      isPlaceholder: true, // TODO: reemplazar por imagen real autorizada de Sentinel Doppler-S.
+      isPlaceholder: false, // TODO: reemplazar por imagen real autorizada de Sentinel Doppler-S.
     },
     {
       name: "LPR",
       type: "Lectura de patentes",
       description: "Software desarrollado por IDEA para lectura de patentes, reportes, alertas y almacenamiento de imágenes.",
-      image: "/assets/placeholders/generic-lpr-placeholder.svg",
+      image: "/assets/development/LPRIMG.png",
       imageAlt: "Ilustración genérica de lectura de patentes",
       path: "/seguridad-vial/lpr",
-      isPlaceholder: true, // TODO: reemplazar por material real autorizado de LPR.
+      isPlaceholder: false, // TODO: reemplazar por material real autorizado de LPR.
     },
   ],
   services: [
@@ -75,8 +75,8 @@ export const roadSafety = {
   ],
   doppler: {
     name: "Sentinel Doppler-S",
-    image: "/assets/placeholders/generic-intersection-placeholder.svg",
-    isPlaceholder: true, // TODO: reemplazar por imagen real autorizada de Sentinel Doppler-S.
+    image: "/assets/development/dppler.png",
+    isPlaceholder: false,
     intro: "Diseñado para registrar cruces con luz roja. Su sensor Doppler detecta el paso de los vehículos e identifica el sentido y la velocidad.",
     features: [
       "Relaciona el estado del semáforo con el paso del vehículo y puede generar tres capturas como evidencia.",
@@ -89,8 +89,8 @@ export const roadSafety = {
   },
   lpr: {
     name: "LPR",
-    image: "/assets/placeholders/generic-lpr-placeholder.svg",
-    isPlaceholder: true, // TODO: reemplazar por material real autorizado de LPR.
+    image: "/assets/development/LPRIMG.png",
+    isPlaceholder: false,
     intro: "La solución de lectura de patentes incorpora software desarrollado por ingenieros de IDEA y puede adaptarse a centros de monitoreo.",
     features: [
       "Generación de reportes y alertas.",

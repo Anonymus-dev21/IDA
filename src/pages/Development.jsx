@@ -9,7 +9,7 @@ export function Development() {
   return (
     <main className="pt-[72px]">
       <section className="relative isolate overflow-hidden bg-brand-deep py-20 text-white sm:py-28" aria-labelledby="development-title">
-        <img src="/assets/development/pcb-illustration.jpg" width="547" height="365" alt="" className="absolute inset-0 -z-20 h-full w-full object-cover opacity-30" />
+        <img src="/assets/development/LPRIMG.png" width="547" height="365" alt="" className="absolute inset-0 -z-20 h-full w-full object-cover opacity-30" />
         <div className="absolute inset-0 -z-10 bg-brand-deep opacity-75" />
         <div className="page-shell">
           <AnimatedSection immediate>
@@ -26,6 +26,16 @@ export function Development() {
         </div>
       </section>
       <Capabilities />
+      <section className="relative isolate flex min-h-[340px] items-center overflow-hidden bg-brand-deep bg-cover bg-center bg-scroll py-16 text-white sm:min-h-[420px] sm:bg-fixed sm:py-20" style={{ backgroundImage: "url('/assets/development/software-embedded-hero.png')" }} aria-label="Software y sistemas embebidos">
+        <div className="absolute inset-0 -z-10 bg-brand-deep/75" />
+        <div className="page-shell flex justify-center text-center">
+          <AnimatedSection className="max-w-2xl">
+            <p className="eyebrow text-cyan-300">Electrónica y software</p>
+            <h2 className="mt-4 font-display text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">Hardware y código trabajando como un solo sistema.</h2>
+            <p className="mt-6 text-lg leading-8 text-slate-200">Desarrollamos firmware, interfaces y sistemas embebidos para que cada equipo responda con precisión en su entorno de uso.</p>
+          </AnimatedSection>
+        </div>
+      </section>
       <EngineeringProcess />
       <section id="proyectos" className="section-space bg-surface" aria-labelledby="projects-title">
         <div className="page-shell">
