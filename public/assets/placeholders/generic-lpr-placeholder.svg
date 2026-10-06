@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title">
+  <title id="title">Ilustración genérica de lectura de patentes</title>
+  <rect width="1200" height="760" fill="#eaf2f7"/>
+  <path d="M0 590h1200v170H0z" fill="#d1e0e8"/>
+  <path d="M92 590h1016" stroke="#f8fbfd" stroke-width="8" stroke-dasharray="66 42"/>
+  <path d="M206 430h780l52 146H160z" fill="#063a68"/>
+  <path d="M280 330h635l71 100H206z" fill="#087bb7"/>
+  <path d="M342 348h512l49 72H296z" fill="#b5d9e8"/>
+  <path d="M245 568h154m402 0h154" stroke="#0f2942" stroke-width="74" stroke-linecap="round"/>
+  <rect x="478" y="477" width="244" height="67" rx="8" fill="#f8fbfd"/>
+  <path d="M501 499h196m-196 20h140" stroke="#97b4c7" stroke-width="8" stroke-linecap="round"/>
+  <g fill="none" stroke="#18bdd4" stroke-width="10" stroke-linecap="round"><path d="M440 456v-35h55M760 456v-35h-55M440 552v35h55M760 552v35h-55"/></g>
+  <path d="M940 180h110v130H940z" fill="#063a68"/>
+  <circle cx="995" cy="230" r="27" fill="#18bdd4"/>
+  <path d="M995 310v118M925 180h140" stroke="#063a68" stroke-width="12" stroke-linecap="round"/>
+  <path d="M760 460l170-200" stroke="#18bdd4" stroke-width="4" stroke-dasharray="15 16"/>
+</svg>

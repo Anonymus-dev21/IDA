@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" role="img" aria-labelledby="title">
+  <title id="title">Fondo gráfico para futura fotografía del equipo IDEA</title>
+  <rect width="900" height="760" fill="#eaf2f7"/>
+  <path d="M0 580h900M140 0v760M620 0v760" stroke="#d6e6ef" stroke-width="2"/>
+  <path d="M160 520h145v-90h135V210h220M615 610h110V470h110" fill="none" stroke="#9dcfdf" stroke-width="4"/>
+  <circle cx="440" cy="210" r="10" fill="#18bdd4"/>
+  <circle cx="725" cy="610" r="10" fill="#18bdd4"/>
+  <circle cx="305" cy="430" r="10" fill="#18bdd4"/>
+  <rect x="290" y="180" width="320" height="330" rx="36" fill="#063a68"/>
+  <path d="M359 425c0-53 41-96 91-96s91 43 91 96" fill="none" stroke="#18bdd4" stroke-width="20"/>
+  <circle cx="450" cy="275" r="45" fill="none" stroke="#18bdd4" stroke-width="20"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title">
+  <title id="title">Ilustración de una intersección con semáforos</title>
+  <rect width="1200" height="760" fill="#eaf2f7"/>
+  <path d="M0 250h1200v260H0z" fill="#d0dce5"/>
+  <path d="M420 0h360v760H420z" fill="#b5c7d4"/>
+  <path d="M0 380h1200M600 0v760" stroke="#f8fbfd" stroke-width="5" stroke-dasharray="40 30"/>
+  <path d="M350 250v260M850 250v260M420 190h360M420 570h360" stroke="#fff" stroke-width="13"/>
+  <g fill="none" stroke="#087bb7" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M310 120v130h110M890 640V510H780"/>
+    <path d="M290 115h68v112h-68zM842 532h68v112h-68z"/>
+  </g>
+  <g fill="#18bdd4"><circle cx="324" cy="141" r="8"/><circle cx="324" cy="172" r="8"/><circle cx="324" cy="203" r="8"/><circle cx="876" cy="556" r="8"/><circle cx="876" cy="588" r="8"/><circle cx="876" cy="620" r="8"/></g>
+  <g fill="#063a68"><rect x="516" y="112" width="168" height="78" rx="22" transform="rotate(90 600 151)"/><rect x="516" y="570" width="168" height="78" rx="22" transform="rotate(90 600 609)"/></g>
+  <g fill="#fff"><rect x="571" y="87" width="58" height="18" rx="7"/><rect x="571" y="655" width="58" height="18" rx="7"/></g>
+  <path d="M130 130h72m-36-36v72M1000 625h72m-36-36v72" stroke="#9ac7d9" stroke-width="4"/>
+</svg>
