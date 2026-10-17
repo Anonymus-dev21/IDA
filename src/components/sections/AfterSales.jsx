@@ -17,7 +17,7 @@ export function AfterSales({ compact = false }) {
           {compact && <Link className="button button-light mt-8" to="/seguridad-vial#postventa">Conocer el servicio <HiArrowRight size={18} /></Link>}
         </AnimatedSection>
         <AnimatedSection delay={0.1}>
-          <ul className="grid gap-4 grid-cols-1 max-w-[554px] items-center">
+          <ul className="grid gap-4 sm:grid-cols-2">
             {(compact ? [roadSafety.afterSales[0], roadSafety.afterSales[2]] : roadSafety.afterSales).map((benefit) => (
               <motion.li key={benefit} whileHover={!compact && !reduceMotion ? { y: -6, scale: 1.01 } : {}} transition={{ duration: 0.2 }} className={`flex gap-3 rounded-2xl border border-white/15 bg-white/5 p-5 leading-6 text-slate-100 ${compact ? "" : "transition-colors hover:border-cyan-300/40 hover:bg-white/10"}`}><HiCheck className="mt-1 shrink-0 text-cyan-300" size={18} />{benefit}</motion.li>
             ))}
