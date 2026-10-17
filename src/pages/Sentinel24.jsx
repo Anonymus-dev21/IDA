@@ -2,6 +2,7 @@ import { HiArrowRight, HiCheck } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { AnimatedSection } from "../components/ui/AnimatedSection";
 import { BackToPrevious } from "../components/ui/BackToPrevious";
+import { HomologationStamp } from "../components/ui/HomologationStamp";
 import { roadSafety } from "../content/roadSafety";
 import { siteContent } from "../content/siteContent";
 
@@ -24,10 +25,7 @@ export function Sentinel24() {
             <img src={sentinel.heroImage} width="2048" height="1152" alt="Render de Sentinel 24 instalado en una vía" className="aspect-[16/10] w-full object-cover" />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-deep via-brand-deep/90 to-transparent px-5 pb-5 pt-16 sm:px-7 sm:pb-7">
               <div className="flex items-end justify-end gap-5">
-                <div className="shrink-0 -rotate-2 rounded-lg border-2 border-red-600 bg-white/4 px-4 py-2 text-center text-red-700 shadow-lg" aria-label="Homologado, Resolución 753/98">
-                  <strong className="block font-display text-sm font-extrabold tracking-[0.12em]">HOMOLOGADO</strong>
-                  <span className="block text-[0.6rem] font-bold uppercase tracking-[0.1em]">Resolución 753/98</span>
-                </div>
+                <HomologationStamp compact />
 
               </div>
             </div>

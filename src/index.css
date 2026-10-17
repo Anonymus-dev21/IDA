@@ -4,6 +4,7 @@
 
 @font-face { font-family: "Urbanist"; src: url("./Fonts/Urbanist/Urbanist-VariableFont_wght.ttf") format("truetype"); font-style: normal; font-weight: 100 900; font-display: swap; }
 @font-face { font-family: "Poppins"; src: url("./Fonts/Poppins/Poppins-Regular.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "Special Elite"; src: url("./Fonts/SpecialElite-Regular.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
 
 @layer base {
   :root { --brand-cyan: #18bdd4; --brand-blue: #087bb7; --brand-dark: #063a68; --brand-deep: #061d36; --surface: #f4f7fa; --background: #ffffff; --ink: #10243a; --muted: #5d6d7e; --border: #dbe4eb; --accent: #40a95b; }
@@ -45,6 +46,12 @@
   .architecture-line { display: block; align-self: center; height: 1px; background: var(--brand-cyan); }
   .interactive-card { border-radius: 1.5rem; box-shadow: 0 1px 2px rgba(6, 29, 54, 0.03); transition: border-color 180ms ease, box-shadow 180ms ease; }
   .interactive-card:hover { border-color: color-mix(in srgb, var(--brand-cyan) 72%, white); box-shadow: 0 16px 35px rgba(6, 58, 104, 0.11); }
+  .homologation-stamp { display: inline-block; border: 2px solid rgba(153, 27, 27, 0.75); border-radius: 0.5rem; padding: 0.75rem 1.25rem; color: #991b1b; text-align: center; transform: rotate(-2deg); }
+  .homologation-stamp-word { display: block; white-space: nowrap; font-family: "Special Elite", serif; font-size: 1.5rem; font-weight: 700; letter-spacing: 0.05em; line-height: 1.2; -webkit-text-stroke: 0.3px currentColor; }
+  .homologation-stamp-resolution { display: block; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.1em; line-height: 1.2; text-transform: uppercase; }
+  .homologation-stamp-compact { flex-shrink: 0; border-color: #dc2626; background: rgba(255, 255, 255, 0.04); padding: 0.5rem 1rem; color: #b91c1c; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); }
+  .homologation-stamp-compact .homologation-stamp-word { font-size: 0.875rem; font-weight: 800; letter-spacing: 0.12em; -webkit-text-stroke-width: 0.2px; }
+  .homologation-stamp-compact .homologation-stamp-resolution { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em; }
   .process-card { border-radius: 1.35rem; min-height: 235px; }
   .card-arrow { font-size: 1.25rem; transition: transform 180ms ease; }
   .interactive-card:hover .card-arrow { transform: translate(3px, -3px); }
