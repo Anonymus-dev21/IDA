@@ -1,4 +1,5 @@
 import { HiArrowRight, HiCheck } from "react-icons/hi";
+import { motion, useReducedMotion } from "motion/react";
 import { Capabilities } from "../components/sections/Capabilities";
 import { Contact } from "../components/sections/Contact";
 import { EngineeringProcess } from "../components/sections/EngineeringProcess";
@@ -6,6 +7,8 @@ import { AnimatedSection } from "../components/ui/AnimatedSection";
 import { development } from "../content/development";
 
 export function Development() {
+  const reduceMotion = useReducedMotion();
+
   return (
     <main className="pt-[72px]">
       <section className="relative isolate overflow-hidden bg-brand-deep py-20 text-white sm:py-28" aria-labelledby="development-title">
@@ -15,13 +18,13 @@ export function Development() {
           <AnimatedSection immediate>
             <p className="eyebrow text-cyan-300">Área de IDEA Ingeniería</p>
             <h1 id="development-title" className="mt-5 max-w-4xl font-display text-5xl font-semibold tracking-[-0.055em] sm:text-6xl lg:text-7xl">Desarrollo y Fabricación Electrónica</h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-200">Diseñamos, construimos y probamos electrónica para aplicaciones específicas, desde el esquema inicial hasta el equipo terminado.</p>
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-200">Diseñamos, fabricamos, montamos y testeamos electrónica para aplicaciones específicas, desde el problema hasta su equipo terminado.</p>
           </AnimatedSection>
         </div>
       </section>
       <section className="section-space bg-white" aria-labelledby="disciplines-title">
         <div className="page-shell grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
-          <AnimatedSection><p className="eyebrow text-brand-blue">Qué hacemos</p><h2 id="disciplines-title" className="mt-4 font-display text-4xl font-semibold tracking-[-0.04em] text-ink sm:text-5xl">Del esquema al equipo en funcionamiento.</h2></AnimatedSection>
+          <AnimatedSection><p className="eyebrow text-brand-blue">Qué hacemos</p><h2 id="disciplines-title" className="mt-4 font-display text-4xl font-semibold tracking-[-0.04em] text-ink sm:text-5xl">Desde el problema hasta su equipo terminado</h2></AnimatedSection>
           <AnimatedSection delay={0.1}><ul className="divide-y divide-border border-y border-border">{development.disciplines.map((item) => <li key={item} className="flex gap-4 py-5 leading-7 text-slate-700"><HiCheck className="mt-1 shrink-0 text-brand-blue" size={20} />{item}</li>)}</ul></AnimatedSection>
         </div>
       </section>
@@ -41,12 +44,12 @@ export function Development() {
         <div className="page-shell">
           <AnimatedSection><p className="eyebrow text-brand-blue">Desarrollos realizados</p><h2 id="projects-title" className="mt-4 font-display text-4xl font-semibold tracking-[-0.04em] text-ink sm:text-5xl">Algunos proyectos de IDEA.</h2></AnimatedSection>
           <div className="mt-12 grid gap-5 lg:grid-cols-2">
-            {development.projects.map((project, index) => <AnimatedSection key={project.name} delay={index * 0.08} className="flex flex-col rounded-[1.5rem] border border-border bg-white p-7 sm:p-9">
+            {development.projects.map((project, index) => <AnimatedSection key={project.name} delay={index * 0.08} className="h-full"><motion.article whileHover={reduceMotion ? {} : { y: -6, scale: 1.01 }} transition={{ duration: 0.2 }} className="interactive-card flex h-full flex-col border border-border bg-white p-7 sm:p-9">
               <p className="eyebrow text-brand-blue">{project.name}</p>
               <h3 className="mt-8 font-display text-3xl font-semibold text-ink">{project.title}</h3>
               <p className="mt-5 flex-1 leading-7 text-muted">{project.description}</p>
               <a className="mt-8 inline-flex items-center gap-2 font-semibold text-brand-blue hover:text-brand-dark" href={project.link} target="_blank" rel="noopener noreferrer">{project.linkLabel} <HiArrowRight size={18} /></a>
-            </AnimatedSection>)}
+            </motion.article></AnimatedSection>)}
           </div>
         </div>
       </section>

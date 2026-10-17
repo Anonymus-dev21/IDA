@@ -43,8 +43,7 @@ export function Hero() {
       <div className="circuit-pattern absolute inset-0 -z-10 opacity-20" />
       <motion.div initial={reducedMotion ? false : "hidden"} animate="visible" variants={{ hidden: {}, visible: { transition: { delayChildren: reducedMotion ? 0 : 0.1, staggerChildren: reducedMotion ? 0 : 0.1 } } }} className="page-shell w-full py-24 text-center">
         <motion.p variants={item} className="eyebrow text-cyan-300">Ingeniería y Desarrollos Electrónicos Argentinos</motion.p>
-        <motion.h1 variants={item} id="hero-title" className="mx-auto mt-6 max-w-5xl font-display text-5xl font-semibold leading-[1.03] tracking-[-0.055em] text-white sm:text-6xl lg:text-8xl">IDEA Ingeniería S.R.L.</motion.h1>
-        <motion.p variants={item} className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">Ingeniería electrónica, seguridad vial y desarrollo de equipos para necesidades concretas.</motion.p>
+        <motion.h1 variants={item} id="hero-title" className="mx-auto mt-6 max-w-5xl font-display text-5xl font-semibold leading-[1.03] tracking-[-0.055em] text-white sm:text-6xl lg:text-8xl">IDEA INGENIERIA S.R.L.</motion.h1>
         <motion.div variants={item} className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
           <Link className="button" to="/seguridad-vial">Seguridad Vial <HiArrowRight size={18} /></Link>
           <Link className="button button-light" to="/desarrollo-y-fabricacion">Desarrollo y Fabricación <HiArrowRight size={18} /></Link>

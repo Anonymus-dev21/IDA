@@ -12,7 +12,7 @@ export function BusinessAreas() {
             <img src="/assets/institutional/road-control.webp" width="1665" height="944" loading="lazy" alt="" className="absolute inset-0 h-full w-full object-cover opacity-35" />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-deep to-transparent" />
             <div className="relative">
-              <p className="eyebrow text-cyan-300">01 · Seguridad y Control Vial</p>
+              <p className="eyebrow text-cyan-300 text-[16.3px]">01 · Seguridad y Control Vial</p>
               <h3 className="mt-4 max-w-md font-display text-4xl font-semibold tracking-tight">Sistemas para el tránsito y su gestión.</h3>
               <p className="mt-5 max-w-lg leading-7 text-slate-200">Sentinel 24, Sentinel Doppler-S y LPR, junto con servicios de instalación, mantenimiento y procesamiento.</p>
               <Link className="button button-light mt-7" to="/seguridad-vial">Conocer soluciones <HiArrowRight size={18} /></Link>
@@ -22,7 +22,7 @@ export function BusinessAreas() {
             <img src="/assets/development/pcb-illustration.jpg" width="547" height="365" loading="lazy" alt="" className="absolute inset-0 h-full w-full object-cover opacity-30" />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-deep to-transparent" />
             <div className="relative">
-              <p className="eyebrow text-cyan-300">02 · Desarrollo y Fabricación</p>
+              <p className="eyebrow text-cyan-300 text-[16.3px]">02 · Desarrollo y Fabricación</p>
               <h3 className="mt-4 max-w-md font-display text-4xl font-semibold tracking-tight">Electrónica diseñada para cada proyecto.</h3>
               <p className="mt-5 max-w-lg leading-7 text-slate-200">Diseño electrónico, firmware, PCB, prototipado, fabricación e integración.</p>
               <Link className="button button-light mt-7" to="/desarrollo-y-fabricacion">Conocer capacidades <HiArrowRight size={18} /></Link>

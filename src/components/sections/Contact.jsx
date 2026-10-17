@@ -14,8 +14,8 @@ export function Contact({ standalone = false }) {
             <div><p className="eyebrow text-cyan-300">Contacto</p><Heading id="contact-title" className="mt-4 max-w-xl font-display text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl">¿Tiene un proyecto en mente?</Heading><p className="mt-5 max-w-xl leading-7 text-slate-300">Si necesita desarrollar un equipo, integrar un sistema o conocer más sobre nuestros productos y servicios, contáctese con nosotros por cualquiera de nuestros medios.</p></div>
             <address className="not-italic">
               <a className="contact-link" href={`mailto:${contact.email}`}><HiOutlineMail size={22} /><span><small>Correo corporativo</small>{contact.email}</span></a>
-              <a className="contact-link mt-5" href="tel:+543426521699"><HiOutlinePhone size={22} /><span><small>Teléfono</small>{contact.phone}</span></a>
-              <a className="contact-link mt-5" href="tel:+543426308541"><HiOutlineDeviceMobile size={22} /><span><small>Celular</small>{contact.mobile}</span></a>
+              <a className="contact-link mt-5" ><HiOutlinePhone size={22} /><span><small>Teléfono</small>{contact.phone}</span></a>
+              <a className="contact-link mt-5" ><HiOutlineDeviceMobile size={22} /><span><small>Celular</small>{contact.mobile}</span></a>
               <p className="mt-7 text-sm text-slate-400">{company.location}</p>
             </address>
           </div>

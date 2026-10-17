@@ -23,12 +23,12 @@ export function Sentinel24() {
           <AnimatedSection immediate delay={0.1} className="relative overflow-hidden rounded-[1.75rem] border border-white/10">
             <img src={sentinel.heroImage} width="2048" height="1152" alt="Render de Sentinel 24 instalado en una vía" className="aspect-[16/10] w-full object-cover" />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-deep via-brand-deep/90 to-transparent px-5 pb-5 pt-16 sm:px-7 sm:pb-7">
-              <div className="flex items-end gap-4">
-                <div className="shrink-0 -rotate-2 rounded-lg border-2 border-red-200 bg-white/95 px-4 py-2 text-center text-red-800 shadow-lg" aria-label="Homologado, Resolución 753/98">
+              <div className="flex items-end justify-end gap-5">
+                <div className="shrink-0 -rotate-2 rounded-lg border-2 border-red-600 bg-white/4 px-4 py-2 text-center text-red-700 shadow-lg" aria-label="Homologado, Resolución 753/98">
                   <strong className="block font-display text-sm font-extrabold tracking-[0.12em]">HOMOLOGADO</strong>
                   <span className="block text-[0.6rem] font-bold uppercase tracking-[0.1em]">Resolución 753/98</span>
                 </div>
-                <p className="max-w-xs pb-1 text-xs font-medium leading-5 text-white sm:text-sm">Homologado nacionalmente, con ensayos realizados en el INTI.</p>
+
               </div>
             </div>
           </AnimatedSection>
@@ -40,11 +40,11 @@ export function Sentinel24() {
           <AnimatedSection>
             <p className="eyebrow text-brand-blue">El equipo</p>
             <h2 id="sentinel-measure-title" className="mt-4 font-display text-4xl font-semibold tracking-[-0.04em] text-ink">Medición de velocidad con espiras inductivas.</h2>
-            <p className="mt-6 leading-7 text-muted">Cada carril tiene dos espiras. El equipo mide el tiempo que tarda un vehículo en pasar de una a la otra y calcula su velocidad a partir de la distancia conocida entre ambas.</p>
+            <p className="mt-6 leading-7 text-muted">En cada carril se instalan dos espiras. El Sentinel 24 detecta el paso de un vehículo y calcula su velocidad, generando un registro fotográfico en caso de superar los límites de velocidad permitidos en el lugar. </p>
             <p className="mt-4 leading-7 text-muted">Puede trabajar en uno o dos carriles, incluso con sentidos de circulación distintos, y utilizar una o dos cámaras IP.</p>
           </AnimatedSection>
           <AnimatedSection delay={0.1} className="grid grid-cols-2 border-l border-t border-border">
-            {sentinel.highlights.map((highlight) => <div key={highlight.label} className="border-b border-r border-border p-6 sm:p-8"><strong className="font-display text-2xl font-semibold text-brand-dark sm:text-3xl">{highlight.value}</strong><span className="mt-2 block text-sm leading-5 text-muted">{highlight.label}</span></div>)}
+            {sentinel.highlights.map((highlight) => <div key={highlight.label} className="border-b border-r border-border p-6 transition-colors duration-200 hover:bg-surface sm:p-8"><strong className="font-display text-2xl font-semibold text-brand-dark sm:text-3xl">{highlight.value}</strong><span className="mt-2 block text-sm leading-5 text-muted">{highlight.label}</span></div>)}
           </AnimatedSection>
         </div>
       </section>

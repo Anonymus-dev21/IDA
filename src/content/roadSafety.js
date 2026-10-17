@@ -3,7 +3,7 @@ export const roadSafety = {
     {
       name: "Sentinel 24",
       type: "Cinemómetro multicarril",
-      description: "Medición de velocidad mediante espiras inductivas, con capacidad de fiscalizar dos carriles simultáneamente.",
+      description: "Mide la velocidad mediante espiras inductivas y fiscaliza hasta dos carriles de forma simultánea. Permite configurar la captura frontal o posterior por carril, validar cada medición y consultar estadísticas e imágenes en alta resolución para respaldar la operación.",
       image: "/assets/sentinel/sentinel-field-view.webp",
       imageAlt: "Render de una instalación vial de Sentinel 24",
       path: "/seguridad-vial/sentinel-24",
@@ -12,18 +12,18 @@ export const roadSafety = {
     {
       name: "Sentinel Doppler-S",
       type: "Control de cruce con luz roja",
-      description: "Detección de paso, sentido y velocidad para registrar cruces en rojo e invasión de la senda peatonal.",
-      image: "/assets/development/dppler.png",
-      imageAlt: "Ilustración genérica de una intersección con semáforos",
+      description: "Detecta el paso de los vehículos, su sentido y velocidad para registrar cruces con luz roja e invasión de la senda peatonal. Relaciona cada evento con el estado del semáforo y genera capturas como evidencia para su revisión.",
+      image: "/assets/development/LPRIMG.png",
+      imageAlt: "Equipo de control vial instalado junto a una intersección semaforizada",
       path: "/seguridad-vial/sentinel-doppler-s",
       isPlaceholder: false, // TODO: reemplazar por imagen real autorizada de Sentinel Doppler-S.
     },
     {
       name: "LPR",
       type: "Lectura de patentes",
-      description: "Software desarrollado por IDEA para lectura de patentes, reportes, alertas y almacenamiento de imágenes.",
-      image: "/assets/development/LPRIMG.png",
-      imageAlt: "Ilustración genérica de lectura de patentes",
+      description: "Software de lectura de patentes desarrollado por IDEA para identificar vehículos y organizar la información detectada. Permite generar reportes y alertas, almacenar imágenes e integrarse con pantallas LED y distintas configuraciones de instalación.",
+      image: "/assets/development/dppler.png",
+      imageAlt: "Cámara de lectura vehicular instalada sobre una autopista",
       path: "/seguridad-vial/lpr",
       isPlaceholder: false, // TODO: reemplazar por material real autorizado de LPR.
     },
@@ -31,19 +31,19 @@ export const roadSafety = {
   services: [
     {
       title: "Instalación",
-      text: "Los equipos de fiscalización son instrumentos de medición. Nuestro personal recibe capacitación de quienes los desarrollan; los procesos de instalación se documentan y generan reportes internos.",
+      text: "Los equipos de fiscalización son instrumentos de medición. Nuestro personal recibe capacitación de quienes los han desarrollado. Todos los procesos de instalación son documentados y generan reportes internos.",
     },
     {
       title: "Mantenimiento",
-      text: "Servicio de mantenimiento para los equipos de seguridad vial.",
+      text: "Realizamos el servicio de mantenimiento de todas nuestras instalaciones y equipos.",
     },
     {
       title: "Procesamiento y actas",
       text: "Procesamiento de registros y generación de actas de infracción.",
     },
     {
-      title: "Pagos",
-      text: "Manejo y control de pagos, con generación de pagos 3.0 mediante QR.",
+      title: "Cobros",
+      text: "Generación de códigos QR para pagos 3.0. Control de pagos, con generación de informes en tiempo real.",
     },
   ],
   afterSales: [
@@ -75,23 +75,25 @@ export const roadSafety = {
   ],
   doppler: {
     name: "Sentinel Doppler-S",
-    image: "/assets/development/dppler.png",
+    image: "/assets/development/LPRIMG.png",
+    imageAlt: "Equipo de control vial instalado junto a una intersección semaforizada",
     isPlaceholder: false,
-    intro: "Diseñado para registrar cruces con luz roja. Su sensor Doppler detecta el paso de los vehículos e identifica el sentido y la velocidad.",
+    intro: "Sentinel Doppler-S está diseñado para registrar cruces con luz roja e invasiones de la senda peatonal. Su sensor Doppler detecta el paso de los vehículos y permite identificar su sentido y velocidad; el sistema relaciona el evento con el estado del semáforo y reúne capturas para facilitar su revisión.",
     features: [
-      "Relaciona el estado del semáforo con el paso del vehículo y puede generar tres capturas como evidencia.",
       "Permite registrar cruces en rojo e invasión de la senda peatonal.",
-      "La detección inalámbrica de luces reduce el tendido de cables en la intersección.",
+      "Relacionando el estado del semáforo con la detección del paso de un vehículo, genera tres capturas como evidencia.",
+      "Posee detección inalámbrica de luces, reduciendo el tendido de cables en la intersección.",
       "Integra cámara y sensor en un mismo gabinete para disminuir el impacto visual.",
-      "Si cuenta con conexión a Internet, puede enviar las infracciones detectadas al centro de monitoreo.",
-      "Está previsto para distintos niveles de flujo vehicular.",
+      "Posee capacidad de envío de infracciones detectadas al centro de monitoreo en tiempo real.",
+      "Diseñado para distintos niveles de flujo vehicular."
     ],
   },
   lpr: {
     name: "LPR",
-    image: "/assets/development/LPRIMG.png",
+    image: "/assets/development/dppler.png",
+    imageAlt: "Cámara de lectura vehicular instalada sobre una autopista",
     isPlaceholder: false,
-    intro: "La solución de lectura de patentes incorpora software desarrollado por ingenieros de IDEA y puede adaptarse a centros de monitoreo.",
+    intro: "LPR combina cámaras de lectura vehicular con software desarrollado por ingenieros de IDEA para reconocer patentes y organizar los registros detectados. Puede adaptarse a centros de monitoreo, generar reportes y alertas, conservar imágenes y conectarse con pantallas LED según las necesidades de cada instalación.",
     features: [
       "Generación de reportes y alertas.",
       "Almacenamiento de imágenes de las patentes detectadas.",

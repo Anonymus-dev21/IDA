@@ -15,7 +15,7 @@ export const siteContent = {
   contact: {
     email: "info@idea-ingenieria.com.ar",
     alternateEmail: "idea.contactos@gmail.com",
-    phone: "+54 342 652 1699",
+    phone: "+54 342 4053005",
     mobile: "+54 342 630 8541",
   },
   metrics: [
@@ -37,24 +37,24 @@ export const siteContent = {
     },
     {
       title: "Fabricación e integración",
-      text: "Fabricamos equipos y los integramos al lugar donde van a funcionar.",
+      text: "Fabricamos, montamos y testeamos, dando una solución llave en mano a nuestros clientes.",
       icon: "03",
     },
     {
       title: "Sistemas embebidos",
-      text: "Desarrollamos la electrónica y el software cuando el proyecto los necesita.",
+      text: "Si el desarrollo requiere integrar conectividad, integración con servicios Web, software y hardware, nuestro Staff de ingenieros está totalmente capacitado para dar la solución que usted necesita.",
       icon: "04",
     },
     {
       title: "Consultoría técnica",
-      text: "Ayudamos a evaluar opciones y a tomar decisiones de ingeniería electrónica.",
+      text: "Ayudamos a evaluar opciones y a tomar decisiones de ingeniería con base a 20 años de experiencia en el rubro.",
       icon: "05",
     },
   ],
   process: [
     { number: "01", title: "Entender el problema", text: "Conversamos sobre qué hace falta, dónde se va a usar el equipo y qué debe cumplir." },
     { number: "02", title: "Diseñar y prototipar", text: "Preparamos una primera versión para probar cómo funciona la idea." },
-    { number: "03", title: "Probar y ajustar", text: "Comprobamos el funcionamiento y hacemos los cambios necesarios." },
+    { number: "03", title: "Probar y ajustar", text: "Comprobamos el funcionamiento y realizamos los cambios necesarios." },
     { number: "04", title: "Fabricar e instalar", text: "Fabricamos el equipo y acompañamos su puesta en marcha." },
   ],
   team: [
@@ -78,21 +78,21 @@ export const siteContent = {
   sentinel: {
     name: "Sentinel 24",
     path: "/seguridad-vial/sentinel-24",
-    homeSummary: "Sentinel 24 es un cinemómetro multicarril con detección mediante espiras inductivas. Con homologación nacional en cumplimiento con la Resolución 753/98.",
+    homeSummary: "Sentinel 24 es un cinemómetro multicarril con detección mediante espiras inductivas. Homologado en cumplimiento con la Resolución 753/98.",
     heroImage: "/assets/sentinel/sentinel-field-view.webp",
     gallery: [
       {
-        src: "/assets/sentinel/sentinel-two-lanes.webp",
+        src: "/assets/sentinel/sentinel24img2.png",
         alt: "Render de Sentinel 24 operando sobre dos carriles",
         caption: "Puede medir dos carriles al mismo tiempo.",
       },
       {
-        src: "/assets/sentinel/sentinel-opposite-directions.webp",
+        src: "/assets/sentinel/sentinel24img3.png",
         alt: "Render de Sentinel 24 para circulación en sentidos diferentes",
         caption: "También puede trabajar con carriles en sentidos distintos.",
       },
       {
-        src: "/assets/sentinel/sentinel-camera-boom.webp",
+        src: "/assets/sentinel/sentinel24img1.png",
         alt: "Render de cámara de Sentinel 24 en montaje sobre pescante",
         caption: "Una de las opciones de montaje para la cámara.",
       },

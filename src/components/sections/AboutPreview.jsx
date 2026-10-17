@@ -11,7 +11,7 @@ export function AboutPreview() {
         <AnimatedSection>
           <p className="eyebrow text-brand-blue">Sobre IDEA</p>
           <h2 id="about-preview-title" className="mt-4 max-w-lg font-display text-4xl font-semibold tracking-[-0.04em] text-ink sm:text-5xl">Experiencia que se traduce en equipos funcionando.</h2>
-          <p className="mt-6 max-w-xl leading-7 text-muted">El equipo de IDEA reúne profesionales de la ingeniería electrónica con experiencia en desarrollo, fabricación e implementación.</p>
+          <p className="mt-6 max-w-xl leading-7 text-muted">El equipo fundador de IDEA posee 20 años de experiencia profesional en el área de la ingeniería electrónica. Experiencia comprobable en el desarrollo, fabricación e implementación de hardware y firmware y software.</p>
           <Link className="button mt-8" to="/nosotros">Conocer IDEA <HiArrowRight size={18} /></Link>
         </AnimatedSection>
         <AnimatedSection delay={0.1} className="grid grid-cols-2 gap-6 border-t border-border pt-8 sm:gap-8">

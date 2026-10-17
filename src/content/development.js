@@ -3,6 +3,7 @@ export const development = {
     "Diseño electrónico, desde el diagrama esquemático hasta la placa de circuito impreso (PCB).",
     "Desarrollo de firmware para microcontroladores, microprocesadores y sistemas embebidos.",
     "Montaje de componentes sobre PCB, prototipado, fabricación e integración.",
+    "Diseño mecánico 3D de gabinetes, prototipado y asistencia técnica en los procesos de matricería y fabricación."
   ],
   projects: [
     {

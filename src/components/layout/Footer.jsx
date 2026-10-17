@@ -22,7 +22,7 @@ export function Footer() {
           <p className="footer-label">Contacto</p>
           <div className="mt-4 space-y-4 text-sm">
             <a className="footer-link flex items-center gap-3" href={`mailto:${contact.email}`}><HiOutlineMail size={18} />{contact.email}</a>
-            <a className="footer-link flex items-center gap-3" href="tel:+543426521699"><HiOutlinePhone size={18} />{contact.phone}</a>
+            <a className="footer-link flex items-center gap-3 cursor-default"><HiOutlinePhone size={18} />{contact.phone}</a>
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@ import { Home } from "./pages/Home";
 import { DopplerS, Lpr } from "./pages/RoadProduct";
 import { RoadSafety } from "./pages/RoadSafety";
 import { Sentinel24 } from "./pages/Sentinel24";
+import { NotFound } from "./pages/NotFound";
 
 const pageMeta = {
   "/": {
@@ -44,13 +45,17 @@ const pageMeta = {
     title: "Contacto | IDEA Ingeniería",
     description: "Comuníquese con IDEA Ingeniería para consultar por proyectos de electrónica, seguridad vial y productos.",
   },
+  notFound: {
+    title: "Página no encontrada | IDEA Ingeniería",
+    description: "La dirección que busca no está disponible. Vuelva al inicio o explore las soluciones de IDEA Ingeniería.",
+  },
 };
 
 function RouteMeta() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    const meta = pageMeta[pathname] || pageMeta["/"];
+    const meta = pageMeta[pathname] || pageMeta.notFound;
     document.title = meta.title;
     document.querySelector('meta[name="description"]')?.setAttribute("content", meta.description);
     document.querySelector('meta[property="og:title"]')?.setAttribute("content", meta.title);
@@ -109,7 +114,7 @@ function AppShell() {
         <Route path="/productos" element={<Navigate replace to="/seguridad-vial" />} />
         <Route path="/productos/sentinel-24" element={<Navigate replace to="/seguridad-vial/sentinel-24" />} />
         <Route path="/productsDetail/:id" element={<Navigate replace to="/seguridad-vial/sentinel-24" />} />
-        <Route path="*" element={<Navigate replace to="/" />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>
